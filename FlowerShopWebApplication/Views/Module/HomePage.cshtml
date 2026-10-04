@@ -1,0 +1,241 @@
+﻿@{
+    Layout = "~/Views/Shared/_UserManagementLayout.cshtml";
+}
+
+
+<style>
+
+    .hero {
+        background-image: url('/Content/Images/flowerBackgroundImage.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5;
+    }
+
+    .hero-content {
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+    }
+</style>
+
+<section class="hero h-screen bg-cover bg-center relative">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+
+    <div class="relative h-full flex items-center justify-center text-center text-white">
+        <div>
+            <h1 ng-init="getWelcomeMessage()" class="text-7xl font-serif font-bold pb-8">{{welcomeMessage}}</h1>
+            <p ng-init="getWelcomeSubtitle()" class="text-xl">{{subtitleWelcomeMessage}}</p>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="bg-white py-20 px-8">
+
+    <div class="max-w-7xl mx-auto">
+
+     
+        <div class="text-center mb-12">
+
+            <h2 class="text-4xl md:text-5xl font-serif font-bold text-gray-800 mb-4">
+                Featured Flowers
+            </h2>
+
+            <p class="text-gray-500 max-w-2xl mx-auto">
+                Beautifully arranged blooms made to brighten someone's day
+                and make every moment a little more special.
+            </p>
+
+        </div>
+
+
+     
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+           
+            <div class="group bg-gray-50 rounded-2xl overflow-hidden shadow-sm
+                        hover:shadow-lg transition duration-300">
+
+                <div class="overflow-hidden">
+                    <img src="~/Content/Images/flowerBouquet_first.jpg"
+                         alt="Romantic Flower Bouquet"
+                         class="w-full h-80 object-cover
+                                group-hover:scale-105 transition duration-500">
+                </div>
+
+                <div class="p-6 text-center">
+
+                    <h3 class="text-2xl font-serif font-bold text-gray-800 mb-2">
+                        Romantic Blooms
+                    </h3>
+
+                    <p class="text-gray-500 mb-4">
+                        A delicate arrangement made for expressing love.
+                    </p>
+
+                    <a href="#"
+                       class="text-gray-700 font-medium hover:underline">
+                        View Arrangement →
+                    </a>
+
+                </div>
+            </div>
+
+
+           
+            <div class="group bg-gray-50 rounded-2xl overflow-hidden shadow-sm
+                        hover:shadow-lg transition duration-300">
+
+                <div class="overflow-hidden">
+                    <img src="~/Content/Images/flowerBouquet_second.jpg"
+                         alt="Pastel Flower Bouquet"
+                         class="w-full h-80 object-cover
+                                group-hover:scale-105 transition duration-500">
+                </div>
+
+                <div class="p-6 text-center">
+
+                    <h3 class="text-2xl font-serif font-bold text-gray-800 mb-2">
+                        Pastel Garden
+                    </h3>
+
+                    <p class="text-gray-500 mb-4">
+                        Soft and elegant blooms for every occasion.
+                    </p>
+
+                    <a href="#"
+                       class="text-gray-700 font-medium hover:underline">
+                        View Arrangement →
+                    </a>
+
+                </div>
+            </div>
+
+
+            <div class="group bg-gray-50 rounded-2xl overflow-hidden shadow-sm
+                        hover:shadow-lg transition duration-300">
+
+                <div class="overflow-hidden">
+                    <img src="~/Content/Images/flowerBouquet_third.jpg"
+                         alt="Fresh Flower Bouquet"
+                         class="w-full h-80 object-cover
+                                group-hover:scale-105 transition duration-500">
+                </div>
+
+                <div class="p-6 text-center">
+
+                    <h3 class="text-2xl font-serif font-bold text-gray-800 mb-2">
+                        Fresh & Lovely
+                    </h3>
+
+                    <p class="text-gray-500 mb-4">
+                        Freshly arranged flowers to brighten any day.
+                    </p>
+
+                    <a href="#"
+                       class="text-gray-700 font-medium hover:underline">
+                        View Arrangement →
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<hr />
+
+
+<hr />
+
+
+<section class="bg-white py-20 px-8">
+
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2
+                gap-12 items-center">
+
+        <div>
+            <img src="~/Content/Images/FlowerBouquetLogin.jpg"
+                 alt="Our Flower Shop"
+                 class="w-full h-[450px] object-cover rounded-2xl">
+        </div>
+
+        <div>
+
+            <h2 class="text-4xl md:text-5xl font-serif font-bold
+                       text-gray-800 mb-6">
+                Flowers with a little more meaning.
+            </h2>
+
+            <p class="text-gray-600 leading-relaxed mb-5">
+                We believe flowers have a special way of turning ordinary
+                moments into memories. Every arrangement is carefully
+                selected and thoughtfully designed to help you express
+                what words sometimes cannot.
+            </p>
+
+            <p class="text-gray-600 leading-relaxed mb-8">
+                Whether you're celebrating someone special, marking an
+                important occasion, or simply sending a little happiness,
+                we're here to help you find the perfect bloom.
+            </p>
+
+            <a href="#"
+               class="inline-block border border-gray-800
+                      px-7 py-3 rounded-full
+                      text-gray-800 font-medium
+                      hover:bg-gray-800 hover:text-white
+                      transition duration-300">
+                Learn More
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="bg-rose-900 text-white py-20 px-8 text-center">
+
+    <div class="max-w-3xl mx-auto">
+
+        <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">
+            Ready to make someone's day?
+        </h2>
+
+        <p class="text-gray-300 mb-8 leading-relaxed">
+            Explore our collection of thoughtfully arranged flowers
+            and find something beautiful for someone special.
+        </p>
+
+        <a href="#"
+           class="inline-block bg-white text-gray-800
+                  px-8 py-3 rounded-full font-medium
+                  hover:bg-gray-100 transition duration-300">
+            Shop Flowers
+        </a>
+
+    </div>
+
+</section>
+

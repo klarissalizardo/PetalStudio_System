@@ -1,0 +1,89 @@
+﻿@{
+    Layout = "~/Views/Shared/_UserManagementLayout.cshtml";
+}
+
+
+<style>
+
+    .hero {
+        background-image: url('/Content/Images/flowerBackgroundAboutPage.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5;
+    }
+
+    .hero-content {
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+    }
+</style>
+
+<section class="h-screen bg-cover bg-center relative" style="background-image: url('/Content/Images/flowerBackgroundAboutPage.jpg');">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+
+    <div class="relative h-full flex items-center justify-center text-center text-white">
+        <div>
+            <h1 class="text-9xl font-serif font-bold pb-8">About Us</h1>
+            <p class="text-xl">The people and passion behind every arrangement.</p>
+        </div>
+    </div>
+</section>
+
+<div class="flex gap-25 max-w-7xl mx-auto px-3 py-16 items-center">
+
+    <div class="flex-1 ">
+        <p class="text-md text-justify pr-12">
+            Petal Studio is a user management system built for a flower shop, designed to keep track of the people who make the shop run,
+            from florists arranging bouquets to customers placing orders. It brings registration,
+            account management, and role-based organization into one simple, easy-to-use platform.
+        </p>
+
+        <p class="text-justify pr-12 pt-6">
+            As a flower shop grows, keeping track of staff and customer accounts by memory or scattered notes becomes unreliable.
+            Petal Studio exists to give the shop a single, organized place to register, view, update,
+            and manage every account, whether they belong to an employee or a customerm, reducing errors and saving time.
+
+        </p>
+
+        <h1 class="py-5 font-bold">Features</h1>
+
+        <ul class="list-disc list-inside space-y-2">
+            <li>User registration for both employees and customers</li>
+            <li>Role-based accounts with department assignment for staff</li>
+            <li>Full account management — create, view, edit, and remove records</li>
+            <li>Form validation to ensure accurate, complete information</li>
+        </ul>
+
+        <h1 class="py-5 font-bold">Technologies Used</h1>
+
+        <ul class="list-disc list-inside space-y-2">
+            <li>ASP.NET MVC with C# for the application's backend structure and routing</li>
+            <li>AngularJS for dynamic, client-side interactivity and data handling</li>
+            <li>Tailwind CSS for styling and responsive design</li>
+            <li>HTML5 & JavaScript for the overall front-end experience</li>
+        </ul>
+
+    </div>
+
+    <div class="flex flex-col gap-9 w-1/3">
+        <img class="w-full h-48 object-cover rounded-xl" src="/Content/Images/Flower_Landscape_Image.jpg"/>
+        <img class="w-full h-48 object-cover rounded-xl" src="/Content/Images/flowerBackgroundImage.jpg"/>
+        <img class="w-full h-48 object-cover rounded-xl" src="~/Content/Images/FlowerBouquetLogin.jpg" />
+    </div>
+
+</div>
